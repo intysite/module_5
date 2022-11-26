@@ -39,7 +39,7 @@ public class Storage {
         IntStream.range(0, bicycle.size()).
                 filter(e -> (e + 1) % 2 == 0)
                 .mapToObj(bicycle::get)
-                .forEach(e -> worker1.brokenGoods(e));
+                .forEach(e -> worker2.brokenGoods(e));
         goods.put("Bicycle", bicycle);
     }
 }
